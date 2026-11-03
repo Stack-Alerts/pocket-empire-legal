@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pocket Empire — Terms of Service &amp; Privacy Policy</title>
+<style>
+  :root { --bg:#0c1014; --panel:#141b22; --line:#24303b; --text:#e7eef5;
+          --muted:#8b9bab; --accent:#5dd39e; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font:16px/1.6 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:48px 24px 96px; }
+  h1 { font-size:30px; margin:0 0 4px; }
+  .sub { color:var(--muted); margin-bottom:32px; }
+  h2 { font-size:20px; margin:40px 0 8px; color:var(--accent); }
+  h3 { font-size:15px; margin:24px 0 6px; }
+  p, li { color:#d3dde6; }
+  a { color:var(--accent); }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:10px;
+          padding:20px 24px; }
+  .updated { color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Pocket Empire</h1>
+  <p class="sub">Terms of Service &amp; Privacy Policy</p>
+  <p class="updated">Last updated: 3 November 2026</p>
+
+  <p>Pocket Empire operates faceless video channels and publishes short-form
+  and long-form content. These terms apply to our website, channels, and
+  content. Contact: <a data-email href="#">Contact us</a>.</p>
+
+  <div class="card">
+    <h2 id="terms">Terms of Service</h2>
+
+    <h3>1. Our content</h3>
+    <p>Our videos and posts are provided for informational and entertainment
+    purposes only. They are not financial, legal, investment, or professional
+    advice. Where we discuss tools, products, or methods, we describe our own
+    testing and opinions, not guarantees.</p>
+
+    <h3>2. Affiliate disclosure</h3>
+    <p>Some links in our content are affiliate links. If you make a purchase
+    through them, we may earn a commission at no additional cost to you. We
+    only recommend products we have tested, and affiliate relationships do not
+    influence our editorial content.</p>
+
+    <h3>3. Intellectual property</h3>
+    <p>Our videos, scripts, and content are our property. You may not
+    republish, redistribute, or reuse them without prior written permission.</p>
+
+    <h3>4. No warranties</h3>
+    <p>Content is provided "as is", without warranties of any kind. We make no
+    guarantees about accuracy, completeness, or the results you may achieve.</p>
+
+    <h3>5. Limitation of liability</h3>
+    <p>To the fullest extent permitted by law, Pocket Empire is not liable for
+    any decisions made or losses incurred as a result of using our content.</p>
+
+    <h3>6. Changes</h3>
+    <p>We may update these terms from time to time. Continued use of our
+    content means you accept the current version.</p>
+
+    <h3>7. Contact</h3>
+    <p>Questions about these terms: <a data-email href="#">Contact us</a>.</p>
+  </div>
+
+  <div class="card" style="margin-top:32px">
+    <h2 id="privacy">Privacy Policy</h2>
+
+    <h3>1. Overview</h3>
+    <p>We collect essentially no personal information from viewers. Our content
+    is viewed on third-party platforms (such as TikTok and YouTube), which have
+    their own privacy practices that we do not control.</p>
+
+    <h3>2. Information we collect</h3>
+    <ul>
+      <li>We do not require accounts and do not collect names, email addresses,
+          or other personal data from people who watch our content.</li>
+      <li>If you email us, we retain that correspondence only to respond and
+          keep records.</li>
+      <li>The platforms that host our content may collect analytics and set
+          cookies; please refer to their respective privacy policies.</li>
+    </ul>
+
+    <h3>3. Affiliate links and third parties</h3>
+    <p>Our content may link to third-party merchants (for example Amazon and
+    TikTok Shop). Those merchants may track purchases and set cookies under
+    their own policies. We may receive a commission on qualifying purchases.</p>
+
+    <h3>4. How we use information</h3>
+    <p>We use information only to respond to inquiries and operate our
+    channels. We do not sell personal information.</p>
+
+    <h3>5. Data retention and security</h3>
+    <p>Email correspondence is retained only as long as needed to respond and
+    for reasonable records. We take reasonable measures to protect the limited
+    information we hold.</p>
+
+    <h3>6. Your rights</h3>
+    <p>You may contact us to access or request deletion of any personal
+    information we hold about you (which, in practice, is minimal).</p>
+
+    <h3>7. Changes</h3>
+    <p>We may update this policy from time to time. Changes are reflected on
+    this page.</p>
+
+    <h3>8. Contact</h3>
+    <p>Privacy questions: <a data-email href="#">Contact us</a>.</p>
+  </div>
+</main>
+<script>
+/* The contact address is assembled at runtime so it never appears as a
+   contiguous string in the page source — crawlers that parse HTML get nothing
+   to scrape, humans who load the page see the real address. */
+(function () {
+  var e = String.fromCharCode(
+    111,102,102,105,99,101,46,   // office.
+    112,111,99,107,101,116,46,   // pocket.
+    101,109,112,105,114,101,64,  // empire@
+    103,109,97,105,108,46,       // gmail.
+    99,111,109                    // com
+  );
+  var els = document.querySelectorAll('[data-email]');
+  for (var i = 0; i < els.length; i++) {
+    els[i].href = 'mailto:' + e;
+    els[i].textContent = e;
+  }
+})();
+</script>
+</body>
+</html>
