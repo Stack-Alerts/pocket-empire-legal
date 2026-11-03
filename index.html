@@ -12,8 +12,14 @@
   body { margin:0; background:var(--bg); color:var(--text);
          font:16px/1.6 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
   main { max-width:760px; margin:0 auto; padding:48px 24px 96px; }
-  h1 { font-size:30px; margin:0 0 4px; }
+  h1 { font-size:32px; margin:0 0 4px; }
   .sub { color:var(--muted); margin-bottom:32px; }
+  .hero { border-bottom:1px solid var(--line); padding-bottom:24px; margin-bottom:32px; }
+  .hero .tag { color:var(--accent); font-size:18px; margin:4px 0 8px; }
+  .hero .lede { color:var(--muted); max-width:640px; }
+  .nav { display:flex; gap:18px; margin-top:16px; flex-wrap:wrap; }
+  .nav a { color:var(--accent); text-decoration:none; font-size:15px; }
+  .nav a:hover { text-decoration:underline; }
   h2 { font-size:20px; margin:40px 0 8px; color:var(--accent); }
   h3 { font-size:15px; margin:24px 0 6px; }
   p, li { color:#d3dde6; }
@@ -37,13 +43,20 @@
 </head>
 <body>
 <main>
-  <h1>Pocket Empire</h1>
-  <p class="sub">Terms of Service &amp; Privacy Policy</p>
-  <p class="updated">Last updated: 3 November 2026</p>
+  <header class="hero">
+    <h1>Pocket Empire</h1>
+    <p class="tag">We create and publish original short-form video content.</p>
+    <p class="lede">Pocket Empire produces short-form and long-form videos for our own
+    channels — researched, written and published in-house. This page covers the terms
+    that apply to our content and how we handle your information.</p>
+    <nav class="nav">
+      <a href="#terms">Terms of Service</a>
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <p>Pocket Empire operates faceless video channels and publishes short-form
-  and long-form content. These terms apply to our website, channels, and
-  content. Contact: <a href="#contact">use the contact form</a>.</p>
+  <p class="updated">Last updated: 3 November 2026</p>
 
   <div class="card">
     <h2 id="terms">Terms of Service</h2>
